@@ -3,6 +3,8 @@ bensapp@cis.upenn.edu
 September 5, 2012
 
 This is a 'lite' version of the Berkeley poselets detector, from
+http://www.cs.berkeley.edu/~lbourdev/poselets/
+specific version
 http://www.cs.berkeley.edu/~lbourdev/poselets/poselets_h3d_code2.june17_2011.tar.gz
 
 It has several speedups while maintaining exact numerical equivalancy.  This results in the given test image being processed in ~3 seconds instead of ~11 seconds in the 'faster_detection=true' mode.  
@@ -14,6 +16,7 @@ Speed Improvements:
 - turned on config.USE_MEX_HOG by default, and recompiled  compute_hog_mex.mexa64 so it works
 
 Results on test.jpg provided, running demo_poselets.m:
+
 *before*
 Computing pyramid HOG (hint: You can cache this)... Done in 1.99 secs.
 Detecting poselets... Done in 1.04 secs.
@@ -23,7 +26,6 @@ Predicting bounding boxes... Done in 0.34 secs.
 Total time: 10.566993 secs
 
 *after*
-
 Computing pyramid HOG (hint: You can cache this)... Done in 0.74 secs.
 Detecting poselets... Done in 1.02 secs.
 Big Q...Done in 0.15 secs.
